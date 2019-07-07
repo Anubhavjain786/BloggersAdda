@@ -1,0 +1,28 @@
+{% extends 'Blog/base.html'%}
+{% block content %}
+{% load static %}
+<html>
+    <head><title>Blog Registration</title>
+    <style>
+        h2,input {
+            color:rgba(255, 255, 255, 0.5);
+            
+        }
+        ::placeholder{
+            color:rgba(255, 255, 255, 0.5);
+        }
+    </style>
+    </head>
+    <body bgcolor="white">
+        <h2 align="center">Welcome to Registration form </h2>
+        <div align="center" style="color: white">
+           <p><input type="text" name="name" placeholder="Enter Your Name" ></p>
+           <p><input type="email" name="email" placeholder="Enter Your Email" ></p>
+           <p> <input type="number" name="mob" placeholder="Enter Your Mobile NUmber" maxlength="10" ></p>
+           <p><input type="password" name="pass" placeholder="Enter Your password" ></p>
+           <p> <input type="password" name="passAgain" placeholder="Enter Your again password" ></p> <br /> 
+            <input type="submit" name="submit" >
+        </div>
+    </body>
+</html>
+{% endblock content %}
